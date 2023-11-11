@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=La+Belle+Aurore&family=Sacramento&family=WindSong&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Monsieur+La+Doulaise&family=Parisienne&family=Sacramento&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&family=La+Belle+Aurore&family=Sacramento&family=WindSong&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Sacramento&display=swap" rel="stylesheet">
   <linkhref="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
@@ -402,6 +403,7 @@ body {
   padding-block-end: 80px;
 }
 
+
 .alert {
   background-color:#eddcd2;
   color: var(--black);
@@ -409,6 +411,7 @@ body {
   text-transform: uppercase;
   font-weight: var(--fw-700);
   letter-spacing: 2px;
+  font-family: 'Cormorant Garamond', serif;
   text-align: center;
   padding-block: 15px;
 }
@@ -421,6 +424,9 @@ body {
   background-color: var(--white);
   padding-block: 26px;
   z-index: 4;
+}
+.navbar-link{
+font-size:25px;
 }
 
 .header-top.active {
@@ -446,15 +452,20 @@ body {
 
 .nav-open-btn {
   width: 26px;
+  font-family: 'Cormorant Garamond', serif;
   display: grid;
   gap: 6px;
   padding-block: 5px;
 }
-
+.nav.hover{
+color:black;
+}
 .nav-open-btn .line {
   height: 2px;
   background-color: var(--black);
-  color:Tan;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', serif;
+  color:black;
 }
 
 .nav-open-btn .line-1 { width: 15px; }
@@ -462,7 +473,7 @@ body {
 .nav-open-btn .line-3 { width: 18px; }
 
 .header-action-btn {
-  font-size: 28px;
+ 
   transition: var(--transition-1);
 }
 
@@ -472,11 +483,16 @@ body {
 .p1{
 align:justify;
 font-size:20px;
+font-family: 'Cormorant Garamond', serif;
+color:black;
 }
-	  .logo{
+.logo{
 
 padding-bottom:20px;
 
+}
+navbar-list-li{
+font-family: 'Cormorant Garamond', serif;
 }
 
 
@@ -529,9 +545,10 @@ padding-bottom:20px;
   letter-spacing: 1px;
   padding-block: 5px;
   transition: var(--transition-1);
+  font-family: 'Cormorant Garamond', serif;
 }
 
-.mobile-navbar .navbar-link:is(:hover, :focus) { color: var(--hoockers-green); }
+.mobile-navbar .navbar-link:is(:hover, :focus) { color: var(--hoockers-green);font-family: 'Cormorant Garamond', serif; }
 
 .overlay {
   background-color: transparent;
@@ -960,11 +977,11 @@ padding-bottom:20px;
 .quote-button{
 position:absolute;
 left:1250px;
-top:5px;
-background-color:palevioletred;
+top:6px;
+background-color:white;
 width:150px;
 height:25px;
-border-radius:10px;
+border-radius:5px;
 font-family:'Libre Baskerville', serif;
 		color:Tan;
 }
@@ -1039,7 +1056,19 @@ font-family:'Libre Baskerville', serif;
    * HEADER
    */
 
-  .alert { padding-block: 8px; }
+  .alert{
+  background-color:#eddcd2;
+  color: var(--black);
+  font-size: var(--fs-7);
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+  letter-spacing: 2px;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+  padding-left:10px;
+  padding-right:10px;
+ 
+}
 
   .header-top .container { padding-inline: 30px; }
 
@@ -1072,6 +1101,11 @@ font-family:'Libre Baskerville', serif;
   .offer .countdown .time:not(:last-child)::after { margin-inline: 20px; }
 
 }
+
+
+
+
+
 
 
 
@@ -1429,19 +1463,15 @@ font-family:'Libre Baskerville', serif;
   <!-- 
     - #HEADER
   -->
-
-  <header class="header">
-
+  
     <div class="alert">
       <div class="container">
         <p class="alert-text">October Sale:Save 45% off Interior Design,now through Sunday</p>
-        <a href="designform.html" class="quote-button">
-          <input type="button"  value="GET FREE QUOTE" >
-		 </a>
       </div>
     </div>
 
-    <div class="header-top" data-header>
+  <header class="header">
+<div class="header-top" data-header>
       <div class="container">
 
         <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
@@ -1453,12 +1483,14 @@ font-family:'Libre Baskerville', serif;
         
 
         <a href="#" class="logo">
-          <img src="logo1.jpg"  width="181" height="20" alt="Glowing">
+          <img src="logo1.jpg"  width="300" height="200" alt="Glowing">
         </a>
+		
 
         <br>
         <br>
 
+       
         <nav class="navbar">
           <ul class="navbar-list">
 
@@ -1473,14 +1505,19 @@ font-family:'Libre Baskerville', serif;
             <li>
               <a href="shopping.html" class="navbar-link has-after">SHOP</a>
             </li>
-
-            <li>
+            
+			<li>
               <a href="blog.html" class="navbar-link has-after">PORTFOLIO</a>
             </li>
 
             <li>
               <a href="contact.html" class="navbar-link has-after">CONTACT</a>
             </li>
+			
+			 <li>
+              <a href="blog.html" class="navbar-link has-after">BLOG</a>
+            </li>
+
 
           </ul>
         </nav>
@@ -1505,7 +1542,7 @@ font-family:'Libre Baskerville', serif;
 
       <div class="wrapper">
         <a href="#" class="logo">
-          <img src="./logo1.jpg" width="400" height="200" alt="Glowing">
+          <img src="./logo1.jpg" width="179" height="26" alt="Glowing">
         </a>
 
         <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
@@ -1516,7 +1553,15 @@ font-family:'Libre Baskerville', serif;
       <ul class="navbar-list">
 
         <li>
+          <a href="new1.html" class="navbar-link" data-nav-link>ABOUT</a>
+        </li>
+
+        <li>
           <a href="service.html" class="navbar-link" data-nav-link>SERVICES</a>
+        </li>
+
+        <li>
+          <a href="shopping.html" class="navbar-link" data-nav-link>SHOP</a>
         </li>
 
         <li>
@@ -1524,15 +1569,11 @@ font-family:'Libre Baskerville', serif;
         </li>
 
         <li>
-          <a href="shop.html" class="navbar-link" data-nav-link>SHOP</a>
-        </li>
-
-        <li>
-          <a href="blog.html" class="navbar-link" data-nav-link>BLOG</a>
-        </li>
-
-        <li>
           <a href="contact.html" class="navbar-link" data-nav-link>CONTACT</a>
+        </li>
+		
+		<li>
+          <a href="blog.html" class="navbar-link" data-nav-link>BLOG</a>
         </li>
 
       </ul>
@@ -1544,10 +1585,8 @@ font-family:'Libre Baskerville', serif;
 
 
 
-<br>
-<br>
-<br>
-<br>
+
+
 
   <main>
     <article>
@@ -1562,7 +1601,7 @@ font-family:'Libre Baskerville', serif;
           <ul class="has-scrollbar">
 
             <li class="scrollbar-item">
-              <div class="hero-card has-bg-image" style="background-image: url('./homenew5.jpg')" height="500px">
+              <div class="hero-card has-bg-image" style="background-image: url('./homenew5.jpg')" height="600px">
 
                 <div class="card-content">
 
@@ -1637,28 +1676,22 @@ font-family:'Libre Baskerville', serif;
 
 
 
-<section class="section blog" id="blog" aria-label="blog" data-section>
+<section class="section blog"  aria-label="feature" data-section>
         <div class="container">
-
-          <h2 class="h2-large section-title">How Love & Aesthetics works?</h2>
-		  
+<center>
+          <h2 class="h3">How Love & Aesthetics works<br></h2>
+		  </center>
+		  <br>
+		  <br>
+		  <br>
 		  <p class="p1">As interior designers, we know how time consuming it is to find furniture and decor that’s actually worth writing home about. But thanks to our experience sourcing pieces for hundreds of thousands of design projects annually, we've sharpened our collective ability to spot a best-in-class find. After 10 years of trend spotting, internet sleuthing, and product testing, 
 		  we know exactly which products will make a space sing.</p>
 		  
 		  
 
-      
-            </div>
+  </div>
 			</section>
-			
-			
-			
-	
-	
-	
-            
-
-<section class="section feature" aria-label="feature" data-section>
+			<section class="section feature" aria-label="feature" data-section>
         <div class="container">
 
           <h2 class="h3">Why choose L&A</h2>
@@ -1674,7 +1707,7 @@ font-family:'Libre Baskerville', serif;
 
                 <h3 class="h3 card-title">BEST DESIGNERS</h3>
 
-                <p class="card-text">
+                <p class="p1">
                  Match with one of our talented designers and get inspired.
 With 10 years of experience in all 50 states and 100,000+ designs, we’ll help you hone your style,
  get inspired, and realize your design dreams for your specific space.
@@ -1691,7 +1724,7 @@ With 10 years of experience in all 50 states and 100,000+ designs, we’ll help 
 
                 <h3 class="h3 card-title">COLLABORATION</h3>
 
-                <p class="card-text">
+                <p class="p1">
                  Collaborate 1:1 with your designer to create your perfect space.
 Let your designer guide you to a design that meets your functional needs and suits your unique style. See it come to life with a 3D rendering of the design in your actual space.
                 </p>
@@ -1707,7 +1740,7 @@ Let your designer guide you to a design that meets your functional needs and sui
 
                 <h3 class="h3 card-title">DREAM HOME</h3>
 
-                <p class="card-text">
+                <p class="p1">
                   Bring your design home
 with ease.
 Our designers source from 100+ home brands so no two spaces are ever alike. Leverage Havenly’s proprietary platform with a simple consolidated checkout and never overpay with our price guarantee.
@@ -1725,6 +1758,8 @@ Our designers source from 100+ home brands so no two spaces are ever alike. Leve
 
     
 	  </section>
+
+    
 
 
 
@@ -1990,6 +2025,9 @@ const scrollReveal = function () {
 scrollReveal();
 
 addEventOnElem(window, "scroll", scrollReveal);
+
+
+
 </script>
 
 
